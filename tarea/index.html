@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>examen final de Web</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/preguntas/pregunta1/uno.html">Pregunta 1</a></li>
+            <li><a href="/preguntas/pregunta2/dos.html">Pregunta 2</a></li>
+            <li><a href="/preguntas/pregunta3/tres.html">Pregunta 3</a></li>
+            <li><a href="/preguntas/pregunta4/cuatro.html">Pregunta 4</a></li>
+            <li><a href="/preguntas/pregunta5/cinco.html">Pregunta 5</a></li>
+            <li><a href="/preguntas/optativa/optativa.html">Optativa</a></li>
+            <li><a href="/index.html">Principal</a></li>
+        </ul>
+    </nav>
+    <main>
+        <header>
+            <h1>Ejercicios</h1>
+        </header>
+
+        <section id="exercise1" class="exercise">
+            <h3>Pregunta 1: Generar la serie</h3>
+            <label for="n">Introduce un numero:</label>
+            <input type="number" id="n" min="0">
+            <button onclick="calculateSeries()">Calcular</button>
+            <p>Resultado: <span id="result1"></span></p>
+        </section>
+
+        <section id="exercise2" class="exercise">
+            <h3>Pregunta 2: Números primos</h3>
+            <label for="nPrimo">Introduce un número:</label>
+            <input type="number" id="nPrimo" min="1">
+            <button onclick="generatePrimes()">Generar</button>
+            <p>Resultado: <span id="result2"></span></p>
+        </section>
+
+        <section id="exercise3" class="exercise">
+            <h3>Ejercicio 3: Calculadora</h3>
+            <div id="calculator">
+                <input type="text" id="calcDisplay" disabled>
+                <button onclick="press('7')">7</button>
+                <button onclick="press('8')">8</button>
+                <button onclick="press('9')">9</button>
+                <button onclick="press('/')">/</button>
+                <button onclick="press('4')">4</button>
+                <button onclick="press('5')">5</button>
+                <button onclick="press('6')">6</button>
+                <button onclick="press('*')">*</button>
+                <button onclick="press('1')">1</button>
+                <button onclick="press('2')">2</button>
+                <button onclick="press('3')">3</button>
+                <button onclick="press('-')">-</button>
+                <button onclick="press('0')">0</button>
+                <button onclick="clearCalc()">C</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="press('+')">+</button>
+            </div>
+        </section>
+
+        <section id="exercise4" class="exercise">
+            <h3>Pregunta 4: Palíndromo</h3>
+            <label for="cadena">Introduce una cadena:</label>
+            <input type="text" id="cadena">
+            <button onclick="checkPalindrome()">Verificar</button>
+            <p>Resultado: <span id="result4"></span></p>
+        </section>
+
+        <section id="exercise5" class="exercise">
+            <h3>Pregunta 5: Rotar números</h3>
+            <label for="numero">Introduce un número:</label>
+            <input type="text" id="numero">
+            <button onclick="rotateEvenDigits()">Rotar</button>
+            <p>Resultado: <span id="result5"></span></p>
+            
+        </section>
+
+        <section id="optional" class="exercise">
+            <h3>Optativa: Factoriales</h3>
+            <label for="factorialN">Introduce un número:</label>
+            <input type="number" id="factorialN" min="0">
+            <button onclick="calculateFactorials()">Calcular</button>
+            <p>Resultado: <span id="resultOpt"></span></p>
+        </section>
+
+        <footer>
+            <p>Solucion de ejercicios</p>
+            <p>Alvaro Rodrigo De la Barra Velasco</p>  
+            <img src="/img/Captura de pantalla 2024-12-10 013305.png" alt="">      
+        </footer>
+    </main>
+
+</body>
+</html>
